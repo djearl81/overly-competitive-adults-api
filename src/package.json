@@ -1,0 +1,12 @@
+{
+  "name": "overly-competitive-adults",
+  "version": "1.0.0",
+  "description": "Advanced Strategy for simple child games. This is the backend data server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Adam Ratkewicz",
+  "license": "ISC"
+}
