@@ -1,20 +1,18 @@
 // var Game =  require('./gameModel');
+var gameService =  require('../game/gameService');
 
 exports.list = (req, h) => {
-  const exampleGames = [
-    {
-      id: 0,
-      name: "tic-tac-toe"
-    },
-    {
-      id: 1,
-      name: "Monopoly Jr."
-    },
-    {
-      id: 2,
-      name: "Candy Land"
-    }
-  ]
+  return gameService.getGames()
+}
 
-  return exampleGames as JSON
+exports.insert = (req, h) => {
+  return gameService.insertGame(req.payload)
+}
+
+exports.update = (req, h) => {
+  return gameService.updateGame(req.params.id, req.payload)
+}
+
+exports.findById = (req, h) => {
+  return gameService.getGameById(req.params.id)
 }
