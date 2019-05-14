@@ -47,7 +47,7 @@ exports.updateGame = function(id, game) {
 
     return {
         old: oldGame,
-        updated: updatedGame
+        new: updatedGame
     }
 }  
 
